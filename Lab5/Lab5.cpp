@@ -2,19 +2,62 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    /*
+    //zadanie 1
+    int tab[10];
+    for (int i = 0 ; i < 10; i++) {
+        cout << "Wprowadz liczbe calkowita: ";
+        cin >> tab[i];
+    }
+    cout << "Liczby w odwroconej kolejnosci: ";
+    for (int x = 9; x >= 0; x--) {
+        cout << tab[x] << endl;
+    }
+    */
+
+
+    /*
+    //zadanie 2
+    int z;
+    cout << "Ile liczb Fibonacciego chcesz wyznaczyc? ";
+    cin >> z;
+    
+    int* tab = new int [z];
+    tab[0] = 0;
+    tab[1] = 1;
+    
+    if (z == 0) {
+        cout << " brak wartosci "<< endl;
+    }
+    else if (z == 1) {
+        cout << tab[0] << endl;
+    }
+    else if (z == 2) {
+        cout << tab[0] << endl;
+        cout << tab[1] << endl;
+    }
+    else {
+        cout << tab[0] << endl;
+        cout << tab[1] << endl;
+        for (int i = 2; i < z; i++) {
+            tab[i] = tab[i - 1] + tab[i - 2];
+        }
+        for (int i = 2; i < z; i++) {
+            cout << tab[i] << endl;
+        }
+    }
+    */
+
+    //zadanie 3
+    int tab2[10];
+    for (int i = 0; i < 10; i++) {
+
+    }
+
+
 }
 
-// Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
-// Debugowanie programu: F5 lub menu Debugowanie > Rozpocznij debugowanie
-
-// Porady dotyczące rozpoczynania pracy:
-//   1. Użyj okna Eksploratora rozwiązań, aby dodać pliki i zarządzać nimi
-//   2. Użyj okna programu Team Explorer, aby nawiązać połączenie z kontrolą źródła
-//   3. Użyj okna Dane wyjściowe, aby sprawdzić dane wyjściowe kompilacji i inne komunikaty
-//   4. Użyj okna Lista błędów, aby zobaczyć błędy
-//   5. Wybierz pozycję Projekt > Dodaj nowy element, aby utworzyć nowe pliki kodu, lub wybierz pozycję Projekt > Dodaj istniejący element, aby dodać istniejące pliku kodu do projektu
-//   6. Aby w przyszłości ponownie otworzyć ten projekt, przejdź do pozycji Plik > Otwórz > Projekt i wybierz plik sln
