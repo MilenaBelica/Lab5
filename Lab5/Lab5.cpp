@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main()
@@ -25,11 +26,11 @@ int main()
     int z;
     cout << "Ile liczb Fibonacciego chcesz wyznaczyc? ";
     cin >> z;
-    
+
     int* tab = new int [z];
     tab[0] = 0;
     tab[1] = 1;
-    
+
     if (z == 0) {
         cout << " brak wartosci "<< endl;
     }
@@ -54,10 +55,21 @@ int main()
 
     //zadanie 3
     int tab2[10];
+    int x, z;
+    int suma = 0;
+
     for (int i = 0; i < 10; i++) {
-
+        x = rand() % 10 + 1;
+        tab2[i] = x;
+        cout << tab2[i] << endl;
     }
-
+    for (z = 0; z < 10; z++) {
+        suma += tab2[z];
+    }
+    cout << "suma elementow tablicy " << suma << endl;
+    if (tab2[z] < suma) {
+        cout << tab2[z];
+    }
 
 }
 
