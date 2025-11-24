@@ -223,6 +223,7 @@ for (int i = 0; i < w; i++) {
 }
 */
 
+/*
 //zadanie 8
 int** tab;
 int** tab2;
@@ -271,7 +272,59 @@ for (int m = 0; m < w; m++) {
     }
     cout << endl;
 }
+*/
+/*
+    //zadanie 9
+int** tab;
+int w, k;
+int i, j;
+int suma = 0;
 
+cout << "Podaj wielkosc macierzy kwadratowej: ";
+cin >> w;
+tab = new int* [w];
+cout << endl;
 
+for (i = 0; i < w; i++) {
+    tab[i] = new int[w];
+}
+
+for (i = 0; i < w; i++) {
+    for (j = 0; j < w; j++) {
+        cout << "wartosc dla komorki macierzy: " << i << "," << j<< " ";
+        cin >> tab[i][j];
+    }
+    cout << endl;
+}
+for (i = 0; i < w; i++) {
+    suma = suma + tab[i][i];
+}
+cout << "suma liczb glownej przekatnej macierzy kwadratowej: " << suma << endl;
+*/
+
+    //zadanie 10
+int tab[10];
+int wieksza;
+int mniejsza;
+
+cout << "Podaj 10 liczb calkowitych: " << endl;
+
+for (int i = 0; i < 10; i++) {
+    cout << "podaj liczbe calkowita nr." << i + 1 << " ";
+    cin >> tab[i];
+}
+
+for (int i = 0; i < 10; i++) {
+    for (int j = 1; j < 10-i; j++) {
+        if (tab[j - 1] > tab[j]) {
+            wieksza = tab[j - 1];
+            tab[j - 1] = tab[j];
+            tab[j] = wieksza;
+        }
+    }
+}
+for (int i = 0; i < 10; i++) {
+    cout << tab[i];
+}
 }
 
